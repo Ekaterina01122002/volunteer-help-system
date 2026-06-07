@@ -1,0 +1,24 @@
+.root {
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+}
+
+.toolbar {
+    -fx-spacing: 8;
+    -fx-padding: 8;
+}
+
+.status-new {
+    -fx-text-fill: #1f4e79;
+}
+
+.status-overdue {
+    -fx-text-fill: #9c0006;
+    -fx-font-weight: bold;
+}
