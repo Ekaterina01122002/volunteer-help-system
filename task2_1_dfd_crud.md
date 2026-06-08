@@ -5,22 +5,7 @@
 Источник задания: [task2_1.md](https://github.com/olgmina/SWEngineering-technics.github.io/blob/gh-pages/2_Design/task2_1.md)
 
 ## 1. DFD уровня 0
-
-```mermaid
-flowchart LR
-    Applicant["Заявитель\n(источник данных)"] -->|обращение и данные заявки| Admin["Администратор / оператор"]
-    Admin -->|ввод заявки и справочник волонтеров| System(("Организовать волонтерскую помощь"))
-    Coordinator["Координатор"] -->|команды управления, назначения| System
-    Volunteer["Волонтер"] -->|данные выполнения| System
-    Weather["OpenWeatherMap API / заглушка"] -->|погодные условия| System
-
-    System -->|статусы и карточки заявок| Coordinator
-    System -->|назначенная заявка| Volunteer
-    System -->|данные для информирования заявителя| Admin
-    Admin -->|сообщение о состоянии заявки| Applicant
-    System -->|уведомления, статистика| Coordinator
-    System -->|адрес уличной заявки| Weather
-```
+![DFD уровня 0](https://github.com/Ekaterina01122002/volunteer-help-system/blob/main/pictures/DFD%20уровня%200.png)
 
 ## 2. DFD уровня 1
 
