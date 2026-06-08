@@ -15,42 +15,7 @@
 
 ## 2. Use-case диаграмма
 
-```mermaid
-flowchart LR
-    Applicant["Заявитель\n(источник данных)"]
-    Volunteer["Волонтер"]
-    Coordinator["Координатор"]
-    Admin["Администратор / оператор"]
-
-    UC1(("Создать заявку"))
-    UC2(("Просмотреть список заявок"))
-    UC3(("Открыть карточку заявки"))
-    UC4(("Редактировать заявку"))
-    UC5(("Отменить заявку"))
-    UC6(("Назначить волонтера"))
-    UC7(("Завершить заявку"))
-    UC8(("Проверить просрочки"))
-    UC9(("Сформировать уведомление"))
-    UC10(("Управлять волонтерами"))
-    UC11(("Проверить погоду"))
-    UC12(("Просмотреть статистику"))
-
-    Applicant -->|передает данные| Admin
-    Volunteer --> UC3
-    Volunteer --> UC7
-    Coordinator --> UC2
-    Coordinator --> UC3
-    Coordinator --> UC4
-    Coordinator --> UC5
-    Coordinator --> UC6
-    Coordinator --> UC8
-    Coordinator --> UC12
-    Admin --> UC10
-    Admin --> UC1
-    Admin --> UC2
-    UC1 -. include .-> UC11
-    UC8 -. include .-> UC9
-```
+![Use-case диаграмма](https://github.com/Ekaterina01122002/volunteer-help-system/blob/main/pictures/Use-case%20диаграмма.png)
 
 ## 3. Сценарии использования
 
