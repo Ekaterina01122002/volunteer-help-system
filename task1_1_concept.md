@@ -70,7 +70,7 @@
 
 ## 3. Контекстная диаграмма
 
-https://github.com/Ekaterina01122002/volunteer-help-system/blob/main/pictures/Контекстная%20диаграмма.png
+![Контекстная диаграмма](https://github.com/Ekaterina01122002/volunteer-help-system/blob/main/pictures/Контекстная%20диаграмма.png?raw=true)
 
 ## 4. Анализ конкурентов
 
