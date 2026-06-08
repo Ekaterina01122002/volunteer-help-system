@@ -20,59 +20,7 @@
 ![Декомпозиция процесса «5. Проверить просрочки»](https://github.com/Ekaterina01122002/volunteer-help-system/blob/main/pictures/Декомпозиция%20процесса%20«5.%20Проверить%20просрочки».png)
 
 ## 4. Информационная модель
-
-```mermaid
-erDiagram
-    HELP_REQUEST ||--o| WEATHER_WARNING : contains
-    HELP_REQUEST ||--o{ NOTIFICATION_MESSAGE : creates
-    VOLUNTEER ||--o{ HELP_REQUEST : assigned_to
-
-    HELP_REQUEST {
-        string id
-        string applicantName
-        string applicantPhone
-        HelpType helpType
-        LocationType locationType
-        string address
-        string plannedDateTime
-        RequestStatus status
-        string assignedVolunteerId
-        string createdAt
-        string updatedAt
-        string completedAt
-        string cancelReason
-        string statusHistory
-        string notificationText
-    }
-
-    VOLUNTEER {
-        string id
-        string fullName
-        string phone
-        string skills
-        boolean available
-        int assignedCount
-    }
-
-    WEATHER_WARNING {
-        string id
-        string requestId
-        double temperature
-        string condition
-        string warningText
-        string checkedAt
-    }
-
-    NOTIFICATION_MESSAGE {
-        string id
-        string requestId
-        string coordinatorName
-        string coordinatorPhone
-        string messageText
-        string createdAt
-        string deliveryStatus
-    }
-```
+![Информационная модель](https://github.com/Ekaterina01122002/volunteer-help-system/blob/main/pictures/Информационная%20модель.png)
 
 История статусов не выделяется в отдельную сущность ER-модели. Она хранится как атрибут `statusHistory` внутри сущности `HelpRequest`, поэтому отдельного DFD-хранилища `D5 История статусов` и отдельной строки `StatusHistory` в CRUD-матрице нет.
 
