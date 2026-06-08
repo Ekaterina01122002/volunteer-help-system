@@ -70,20 +70,7 @@
 
 ## 3. Контекстная диаграмма
 
-```mermaid
-flowchart LR
-    Applicant["Заявитель\n(источник данных)"] -->|обращение и данные заявки| Admin["Администратор / оператор"]
-    Admin -->|ввод заявки, справочник волонтеров, контроль данных| System["ПС Организация волонтерской помощи"]
-    Volunteer["Волонтер"] -->|готовность, выполнение| System
-    Coordinator["Координатор"] -->|назначение, проверка просрочек| System
-    System -->|статус заявки и карточка| Admin
-    Admin -->|информирование о состоянии заявки| Applicant
-    System -->|назначенная заявка| Volunteer
-    System -->|уведомление, статистика| Coordinator
-    System -->|чтение/запись данных| Store[("JSON-хранилище")]
-    System -->|адрес уличной заявки| Weather["OpenWeatherMap API / заглушка"]
-    Weather -->|погодные условия| System
-```
+https://github.com/Ekaterina01122002/volunteer-help-system/blob/main/pictures/Контекстная%20диаграмма.png
 
 ## 4. Анализ конкурентов
 
